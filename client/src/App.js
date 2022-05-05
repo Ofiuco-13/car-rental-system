@@ -1,15 +1,18 @@
 import "./App.css";
-import NavbarComp from "./components/navbar";
 import React, { Fragment } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import RentList from "./components/rentlist";
+import ShowRents from "./components/showRents";
+import Navbar from "./components/navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Fragment>
-      <NavbarComp />
-      <RentList />
-      <RentList />
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ShowRents />} />
+        </Routes>
+      </BrowserRouter>
     </Fragment>
   );
 }

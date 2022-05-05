@@ -23,9 +23,9 @@ const conection = async () => {
   }
 };
 
-// app.get("/", (req, res) => {
-//   res.send("Hola Mundo");
-// });
+app.get("/", (req, res) => {
+  res.send("Hola Mundo");
+});
 
 app.listen(port, () => {
   conection();
