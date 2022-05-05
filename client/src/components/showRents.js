@@ -25,7 +25,7 @@ const ShowRents = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-2">
       <div className="row">
         <div className="col">
           <Link to="/create" className="btn btn-primary mt-2 mb-2">
@@ -55,7 +55,7 @@ const ShowRents = () => {
                   <td>{rent.car}</td>
                   <td>{rent.user}</td>
                   <td>
-                    <Link to={`/edit/${rent.id}`} className="btn btn-info">
+                    <Link to={`/edit/${rent.id}`} className="btn btn-info mr-4">
                       Edit
                     </Link>
                     <button
