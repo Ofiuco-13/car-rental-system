@@ -11,10 +11,10 @@ const getAllRentals = async (req, res) => {
 
 const getRental = async (req, res) => {
   try {
-    const rental = rentalModel.findAll({
+    const rental = await rentalModel.findAll({
       where: { id: req.params.id },
     });
-    res.json(rental);
+    res.json(rental[0]);
   } catch (e) {
     res.json({ message: e.message });
   }
