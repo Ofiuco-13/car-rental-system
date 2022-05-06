@@ -1,5 +1,5 @@
 import axios from "axios";
-import { createRef, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const URL = "http://localhost:8000/rentals/";

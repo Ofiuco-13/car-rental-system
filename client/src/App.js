@@ -1,8 +1,8 @@
-import "./App.css";
 import React, { Fragment } from "react";
 import ShowRents from "./components/showRents";
 import Navbar from "./components/navbar";
 import CreateRent from "./components/createRent";
+import EditRent from "./components/editRent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ShowRents />} />
           <Route path="/create" element={<CreateRent />} />
+          <Route path="/edit/:id" element={<EditRent />} />
         </Routes>
       </BrowserRouter>
     </Fragment>
